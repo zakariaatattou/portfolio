@@ -297,6 +297,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-width: none;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -311,6 +312,7 @@ section {
   -webkit-transform-origin: center center;
           transform-origin: center center;
   scroll-snap-align: start;
+  overflow-y: hidden;
 }
 
 .work-section .card .slides .slide img {

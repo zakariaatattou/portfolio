@@ -256,6 +256,7 @@ section {
             width: 100%;
             display: flex;
             overflow-x: scroll;
+            overflow-y: hidden;
             scrollbar-width: none;
             scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
@@ -266,6 +267,7 @@ section {
                 flex-shrink: 0;
                 transform-origin: center center;
                 scroll-snap-align: start;
+                overflow-y: hidden;
 
                 img {
                     width: 100%;
