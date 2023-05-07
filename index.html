@@ -93,60 +93,89 @@
             </div>
         </div>
     </section>
+    <section class="timeline-section"
+             id="timeline">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-row">
+                <div class="timeline-content"
+                     data-aos="fade-right">
+                    <a target="_blank"
+                       href="https://invyscode.co/">INVYSCODE</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                </div>
+                <div class="timeline-time"
+                     data-aos="fade-left">
+                    <span class="year">2021</span>
+                    <span class="month">April</span>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="timeline-content"
+                     data-aos="fade-left">
+                    <a target="_blank"
+                       href="https://valsquad.com/">VALSQUAD</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                </div>
+                <div class="timeline-time"
+                     data-aos="fade-right">
+                    <span class="year">2021</span>
+                    <span class="month">June</span>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="timeline-content"
+                     data-aos="fade-right">
+                    <a target="_blank"
+                       href="https://blackstoneeit.com/">BLACKSTONE EIT</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                </div>
+                <div class="timeline-time"
+                     data-aos="fade-left">
+                    <span class="year">2022</span>
+                    <span class="month">Mai</span>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="timeline-content"
+                     data-aos="fade-left">
+                    <a target="_blank"
+                       href="https://valsquad.com/">VALSQUAD</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                </div>
+                <div class="timeline-time"
+                     data-aos="fade-right">
+                    <span class="year">2023</span>
+                    <span class="month">January</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section class="work-section"
              id="work">
-        <h2>Featured Work</h2>
+        <h2 class="section-title">Featured Work</h2>
 
-        <div class="grid">
-            <div class="card">
+        <div class="card">
+
+            <div class="img">
+                <!-- <img src="./img/ajman-preview.png"
+                     alt=""> -->
+            </div>
+            <div class="details">
                 <h3>E-service portal for Ajman Citizens Affairs Office </h3>
-                <div class="slides">
-                    <div class="slide">
-                        <img src="./img/ajman-preview.png"
-                             alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/ajman-preview.png"
-                             alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/ajman-preview.png"
-                             alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="./img/ajman-preview.png"
-                             alt="">
-                    </div>
-                </div>
-
-
                 <p>Ajman eService Portal is the rendering of government services and information to the public citizens
                     and allows government to deliver services to citizen when they need them </p>
+                <ul>
+                    <li>
+                        Angular
+                    </li>
+                    <li>
+                        Bootstrap
+                    </li>
+                </ul>
             </div>
-            <!-- <div class="card">
-                <h3>Project name goes here</h3>
-                <img src="https://smakosh.com/static/d4747b7207d3c3b13dd60d75d25a4935/0d27e/ontwik.webp"
-                     alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi odio, expedita labore dolorum modi
-                    eligendi laudantium quidem dolor quam laborum corrupti corporis cumque. Quas, nesciunt ipsum nihil
-                    voluptates eum molestiae. </p>
-            </div>
-            <div class="card">
-                <h3>Project name goes here</h3>
-                <img src="https://smakosh.com/static/d4747b7207d3c3b13dd60d75d25a4935/0d27e/ontwik.webp"
-                     alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi odio, expedita labore dolorum modi
-                    eligendi laudantium quidem dolor quam laborum corrupti corporis cumque. Quas, nesciunt ipsum nihil
-                    voluptates eum molestiae. </p>
-            </div>
-            <div class="card">
-                <h3>Project name goes here</h3>
-                <img src="https://smakosh.com/static/d4747b7207d3c3b13dd60d75d25a4935/0d27e/ontwik.webp"
-                     alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi odio, expedita labore dolorum modi
-                    eligendi laudantium quidem dolor quam laborum corrupti corporis cumque. Quas, nesciunt ipsum nihil
-                    voluptates eum molestiae. </p>
-            </div> -->
         </div>
     </section>
     <section class="contact-section"
@@ -179,6 +208,11 @@
                     class="btn primary">Send</button>
         </form>
     </section>
+    <a href=""
+       target="_blank"
+       class="whatsapp-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     <footer>
         <p>ZAKARIA ATATTOU</p>
         <span>|</span>
@@ -187,7 +221,12 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init();
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        AOS.init();
+        document.querySelectorAll("a").forEach(item => {
+            item.addEventListener('click', e => e.preventDefault())
+        })
     </script>
 
 </body>
