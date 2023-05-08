@@ -98,11 +98,20 @@ section {
     align-items: center;
     width: 100%;
 
+    // svg {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    // }
+
     .description {
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-self: center;
+        border-left: 2px solid #635FC7;
+        padding-left: 2rem;
 
         h3 {
             margin-bottom: 1rem;
@@ -393,24 +402,47 @@ section {
             margin-bottom: 2rem;
         }
 
+        .swiper {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 2rem;
+
+            width: 50%;
+
+            .swiper-slide {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: #635fc7;
+            }
+        }
+
         .img {
             width: 50%;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             border-radius: 2rem;
             overflow: hidden;
-            background-image: url("../img/ajman-preview.png");
             background-size: cover;
             background-position: top;
             transition: background-position 4s;
 
-            &:hover {
-                background-position: bottom;
-            }
+
 
             // img {
             //     width: 100%;
             //     height: auto;
             // }
+        }
+
+        &:hover {
+
+            .img {
+                background-position: bottom;
+            }
         }
 
         .details {
@@ -516,8 +548,8 @@ section {
 }
 
 .contact-section {
-    padding-top: 20rem;
-    padding-bottom: 10rem;
+    padding: 20rem 50rem 10rem 50rem;
+
     position: relative;
 
     h2 {
