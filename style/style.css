@@ -741,13 +741,67 @@ footer a:hover i {
 }
 
 @media (max-width: 768px) {
-  .work-section .grid {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+  .work-section .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .work-section .grid .card:hover {
-    -webkit-transform: none !important;
-            transform: none !important;
+  .work-section .card .swiper,
+  .work-section .card .details {
+    width: 100%;
+  }
+  .work-section .card .swiper {
+    margin-bottom: 2rem;
+  }
+  .timeline-section {
+    padding: 20rem 3rem 10rem 3rem !important;
+  }
+  .timeline-section .timeline .timeline-row {
+    width: 100%;
+    gap: 0;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-bottom: 2rem;
+  }
+  .timeline-section .timeline .timeline-row .timeline-time {
+    margin-bottom: 1rem;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: initial !important;
+        -ms-flex-align: initial !important;
+            align-items: initial !important;
+  }
+  .timeline-section .timeline .timeline-row .timeline-content {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .timeline-section .timeline .timeline-row .timeline-content::after {
+    display: none;
+  }
+  .timeline-section .timeline .timeline-row .timeline-content::before {
+    display: none;
+  }
+  .timeline-section .timeline::after {
+    display: none;
+  }
+  .contact-section {
+    padding: 20rem 3rem 10rem 3rem !important;
   }
 }
 
@@ -781,6 +835,9 @@ footer a:hover i {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .contact-section {
+    padding: 20rem 20rem 10rem 20rem;
   }
 }
 
