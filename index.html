@@ -30,13 +30,14 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header"
+            id="header">
         <a class="title"
            href="">Zakaria Atattou.</a>
 
         <ul>
             <li><a href="#home"><i class="fa-solid fa-house"></i></i>Home</a></li>
-            <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+            <!-- <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li> -->
             <li><a href="#experience"><i class="fa-solid fa-layer-group"></i> Experience</a></li>
             <li>
                 <a href="#work"><i class="fa-solid fa-list"></i> Featured Work</a>
@@ -45,6 +46,9 @@
                 <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
             </li>
         </ul>
+
+        <button id="burger-btn"
+                class="burger-btn"><i class="fa-solid fa-bars"></i></button>
     </header>
     <section class="about-section"
              id="home">
@@ -61,6 +65,32 @@
             <h1>ZAKARIA ATATTOU</h1>
             <p>A passionate frontend developer focused on turning ideas into functional and delightful user experiences.
             </p>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-angular"></i>
+                    <span>ANGULAR</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-node-js"></i>
+                    <span>NODE</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-figma"></i>
+                    <span>FIGMA</span>
+                </li>
+            </ul>
             <div>
                 <a href="#contact"><button class="btn primary">Contact</button></a>
                 <a href="#work"><button class="btn secondary">View Projects</button></a>
@@ -69,33 +99,25 @@
 
         <div class="illustration"
              data-aos="fade-left">
-            <img src="./img/about.svg"
+            <img src="./img/profile.png"
                  alt="">
+            <ul>
+                <li>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="skills-section"
+    <!-- <section class="skills-section"
              id="about">
         <h2>About</h2>
 
-        <div class="row">
+        <div class="row"
+             data-aos="fade-bottom">
             <div class="first-col">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut soluta quisquam illo placeat optio
-                    fuga
-                    minima distinctio aperiam vel ullam libero voluptas natus nostrum, sit, nulla dolorum dolores
-                    officiis?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius error nisi iusto officiis. Nihil
-                    adipisci
-                    natus deserunt consequatur modi perspiciatis qui recusandae temporibus sint placeat debitis dicta
-                    atque,
-                    quasi sit?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, vero optio, est voluptates neque
-                    obcaecati esse ex nostrum quos dolores similique veritatis officia amet quis eligendi adipisci ipsum
-                    sit
-                    officiis?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed sint veritatis, vero neque quia
-                    exercitationem optio accusamus corporis debitis non laboriosam ipsam eaque molestiae laudantium
-                    provident, ea unde, nam voluptatibus.
-                </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut soluta quisquam illo placeat optio
                     fuga
                     minima distinctio aperiam vel ullam libero voluptas natus nostrum, sit, nulla dolorum dolores
@@ -135,6 +157,10 @@
                         <i class="fa-brands fa-node-js"></i>
                         <span>NODE</span>
                     </li>
+                    <li>
+                        <i class="fa-brands fa-figma"></i>
+                        <span>FIGMA</span>
+                    </li>
                 </ul>
             </div>
 
@@ -154,60 +180,52 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="timeline-section"
              id="experience">
         <h2 class="section-title">Experience</h2>
 
         <div class="timeline">
             <div class="timeline-row">
-                <div class="timeline-content"
-                     data-aos="fade-right">
+                <div class="timeline-content">
                     <a target="_blank"
                        href="https://invyscode.co/">INVYSCODE</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
                 </div>
-                <div class="timeline-time"
-                     data-aos="fade-left">
+                <div class="timeline-time">
                     <span class="year">2021</span>
                     <span class="month">April</span>
                 </div>
             </div>
             <div class="timeline-row">
-                <div class="timeline-content"
-                     data-aos="fade-left">
+                <div class="timeline-content">
                     <a target="_blank"
                        href="https://valsquad.com/">VALSQUAD</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
                 </div>
-                <div class="timeline-time"
-                     data-aos="fade-right">
+                <div class="timeline-time">
                     <span class="year">2021</span>
                     <span class="month">June</span>
                 </div>
             </div>
             <div class="timeline-row">
-                <div class="timeline-content"
-                     data-aos="fade-right">
+                <div class="timeline-content">
                     <a target="_blank"
                        href="https://blackstoneeit.com/">BLACKSTONE EIT</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
                 </div>
-                <div class="timeline-time"
-                     data-aos="fade-left">
+                <div class="timeline-time">
                     <span class="year">2022</span>
                     <span class="month">Mai</span>
                 </div>
             </div>
             <div class="timeline-row">
-                <div class="timeline-content"
-                     data-aos="fade-left">
+                <div class="timeline-content">
                     <a target="_blank"
                        href="https://valsquad.com/">VALSQUAD</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
                 </div>
-                <div class="timeline-time"
-                     data-aos="fade-right">
+                <div class="timeline-time">
                     <span class="year">2023</span>
                     <span class="month">January</span>
                 </div>
@@ -340,7 +358,7 @@
 
     <script>
         AOS.init();
-        var swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper(".mySwiper", {
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -350,9 +368,20 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-        // document.querySelectorAll("a").forEach(item => {
-        //     item.addEventListener('click', e => e.preventDefault())
-        // })
+        const burgerBtn = document.getElementById("burger-btn")
+        const header = document.getElementById("header")
+        document.addEventListener("scroll", (event) => {
+            if (window.pageYOffset > 50) {
+                header.classList.add("stretched")
+            } else {
+                header.classList.remove("stretched")
+
+            }
+        });
+
+        burgerBtn.addEventListener("click", () => {
+            header.classList.toggle("collapsed")
+        })
     </script>
 
 </body>
