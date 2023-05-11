@@ -116,7 +116,6 @@ section {
     align-items: center;
     width: 100%;
     position: relative;
-
     // &::after {
     //     position: absolute;
     //     left: -10%;
@@ -812,14 +811,36 @@ footer {
 //Media Queries
 @media (max-width: 576px) {
     .header {
-        width: 100%;
+        width: calc(100% - 2rem);
         flex-direction: column;
-        justify-content: center;
+        justify-content: initial;
+
+        &.stretched {
+            width: 100%;
+            padding: 0 5rem;
+
+        }
 
         &.collapsed {
             ul {
+                margin-top: 3rem;
                 display: flex;
                 flex-direction: column;
+                width: 100%;
+
+                li {
+
+                    width: 100%;
+
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    a {
+                        width: 100%;
+                        font-size: 1.8rem;
+                    }
+                }
             }
         }
 
@@ -846,6 +867,7 @@ footer {
         }
 
         .title {
+            margin-top: 2.5rem;
             align-self: flex-start;
         }
     }
@@ -974,6 +996,7 @@ footer {
     }
 
     .header {
+        width: calc(100% - 2rem);
         padding: 0 3rem;
     }
 

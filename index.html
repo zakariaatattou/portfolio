@@ -371,11 +371,17 @@
         const burgerBtn = document.getElementById("burger-btn")
         const header = document.getElementById("header")
         document.addEventListener("scroll", (event) => {
+            header.classList.remove("collapsed")
+
             if (window.pageYOffset > 50) {
                 header.classList.add("stretched")
             } else {
                 header.classList.remove("stretched")
-
+            }
+        });
+        document.addEventListener("click", (event) => {
+            if (event.target !== header) {
+                header.classList.remove("collapsed")
             }
         });
 
