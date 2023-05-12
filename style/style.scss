@@ -27,10 +27,10 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    z-index: 1000;
     border-radius: 2rem;
     box-shadow: rgba(0, 112, 240, 0.1) 2px 2px 2px;
     transition: width .3s;
+    z-index: 2000;
 
     .burger-btn {
         display: none;
@@ -116,24 +116,6 @@ section {
     align-items: center;
     width: 100%;
     position: relative;
-    // &::after {
-    //     position: absolute;
-    //     left: -10%;
-    //     bottom: -30%;
-    //     width: 120rem;
-    //     height: 120rem;
-    //     border-radius: 50%;
-    //     content: "";
-    //     background-color: #a8a4ff;
-    //     z-index: -1;
-    // }
-
-    // svg {
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     width: 100%;
-    // }
 
     .description {
         width: 60%;
@@ -151,7 +133,7 @@ section {
 
         h1 {
             margin-bottom: 2rem;
-            font-size: 5rem;
+            font-size: 4rem;
         }
 
         p {
@@ -160,9 +142,16 @@ section {
             line-height: 3.5rem;
         }
 
-        button {
-            width: 20rem;
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+
+            button {
+                width: 100%;
+            }
         }
+
+
 
         ul {
             list-style: none;
@@ -476,7 +465,7 @@ section {
                     color: inherit;
                     text-decoration: none;
                     font-size: 1.8rem;
-                    margin-bottom: 1rem;
+                    // margin-bottom: 1rem;
 
                     &:hover {
                         text-decoration: underline;
@@ -567,6 +556,10 @@ section {
             .swiper-button-next,
             .swiper-button-prev {
                 color: #635fc7;
+
+                &::after {
+                    font-size: 4rem;
+                }
             }
         }
 

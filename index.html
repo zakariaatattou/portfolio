@@ -91,7 +91,7 @@
                     <span>FIGMA</span>
                 </li>
             </ul>
-            <div>
+            <div class="cta-btns">
                 <a href="#contact"><button class="btn primary">Contact</button></a>
                 <a href="#work"><button class="btn secondary">View Projects</button></a>
             </div>
@@ -190,7 +190,7 @@
                 <div class="timeline-content">
                     <a target="_blank"
                        href="https://invyscode.co/">INVYSCODE</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
                 </div>
                 <div class="timeline-time">
                     <span class="year">2021</span>
@@ -201,7 +201,7 @@
                 <div class="timeline-content">
                     <a target="_blank"
                        href="https://valsquad.com/">VALSQUAD</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
                 </div>
                 <div class="timeline-time">
                     <span class="year">2021</span>
@@ -212,7 +212,7 @@
                 <div class="timeline-content">
                     <a target="_blank"
                        href="https://blackstoneeit.com/">BLACKSTONE EIT</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
                 </div>
                 <div class="timeline-time">
                     <span class="year">2022</span>
@@ -223,7 +223,7 @@
                 <div class="timeline-content">
                     <a target="_blank"
                        href="https://valsquad.com/">VALSQUAD</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
                 </div>
                 <div class="timeline-time">
                     <span class="year">2023</span>
@@ -248,9 +248,10 @@
                         <img src="./img/ajman-2.png"
                              alt="">
                     </div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">
+                        <img src="./img/ajman-3.png"
+                             alt="">
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -278,14 +279,11 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./img/khadamati-2.png"
+                        <img src="./img/khadamati-1.png"
                              alt="">
                     </div>
-                    <div class="swiper-slide"> <img src="./img/khadamati-1ajm.png"
+                    <div class="swiper-slide"> <img src="./img/khadamati-2.png"
                              alt=""></div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -379,11 +377,11 @@
                 header.classList.remove("stretched")
             }
         });
-        // document.addEventListener("click", (event) => {
-        //     if (event.target !== header) {
-        //         header.classList.remove("collapsed")
-        //     }
-        // });
+        document.addEventListener("click", (event) => {
+            if (!header.contains(event.target)) {
+                header.classList.remove("collapsed")
+            }
+        });
 
         burgerBtn.addEventListener("click", () => {
             header.classList.toggle("collapsed")

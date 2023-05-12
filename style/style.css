@@ -35,12 +35,12 @@ header {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 80%;
-  z-index: 1000;
   border-radius: 2rem;
   -webkit-box-shadow: rgba(0, 112, 240, 0.1) 2px 2px 2px;
           box-shadow: rgba(0, 112, 240, 0.1) 2px 2px 2px;
   -webkit-transition: width .3s;
   transition: width .3s;
+  z-index: 2000;
 }
 
 header .burger-btn {
@@ -155,7 +155,7 @@ section {
 
 .about-section .description h1 {
   margin-bottom: 2rem;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .about-section .description p {
@@ -164,8 +164,15 @@ section {
   line-height: 3.5rem;
 }
 
-.about-section .description button {
-  width: 20rem;
+.about-section .description .cta-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.about-section .description .cta-btns button {
+  width: 100%;
 }
 
 .about-section .description ul {
@@ -543,7 +550,6 @@ section {
   color: inherit;
   text-decoration: none;
   font-size: 1.8rem;
-  margin-bottom: 1rem;
 }
 
 .timeline-section .timeline .timeline-row .timeline-content a:hover {
@@ -635,6 +641,11 @@ section {
 .work-section .card .swiper .swiper-button-next,
 .work-section .card .swiper .swiper-button-prev {
   color: #635fc7;
+}
+
+.work-section .card .swiper .swiper-button-next::after,
+.work-section .card .swiper .swiper-button-prev::after {
+  font-size: 4rem;
 }
 
 .work-section .card .img {
