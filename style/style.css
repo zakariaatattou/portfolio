@@ -721,7 +721,8 @@ section {
 }
 
 .contact-section {
-  padding: 20rem 50rem 10rem 50rem;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
   background-color: #11081f;
   position: relative;
 }
@@ -784,7 +785,7 @@ section {
 }
 
 .contact-section .form-group label {
-  color: #11081f;
+  color: white;
   margin-bottom: 1rem;
   font-size: 1.7rem;
 }
@@ -1076,6 +1077,12 @@ footer a:hover i {
   }
 }
 
+@media (max-width: 1300px) {
+  html {
+    font-size: 7px;
+  }
+}
+
 @media (max-width: 1400px) {
   html {
     font-size: 8px;
@@ -1084,9 +1091,21 @@ footer a:hover i {
     width: calc(100% - 2rem);
     padding: 0 3rem;
   }
+  .header.stretched {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0 3rem;
+  }
   section {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 9px;
   }
 }
 /*# sourceMappingURL=style.css.map */
