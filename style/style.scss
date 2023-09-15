@@ -77,7 +77,7 @@ header {
             }
 
             &:hover {
-                color: #000112;
+                color: #635FC7;
             }
 
 
@@ -116,6 +116,7 @@ section {
     align-items: center;
     width: 100%;
     position: relative;
+    background: url("../assets/img/bg-1.webp");
 
     .description {
         width: 60%;
@@ -231,7 +232,7 @@ section {
 .skills-section {
     padding-top: 15rem;
     padding-bottom: 10rem;
-    background-color: #11081f;
+    background-color: #04091e;
     position: relative;
 
 
@@ -370,7 +371,10 @@ section {
     padding-top: 20rem;
     padding-bottom: 10rem;
     position: relative;
-    background-color: #11081f;
+    // background-color: #04091e;
+    background: url("../assets/img/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     .section-title {
         position: absolute;
@@ -457,7 +461,7 @@ section {
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                color: #11081f;
+                color: #04091e;
                 text-align: center;
                 position: relative;
 
@@ -505,13 +509,15 @@ section {
     padding-top: 20rem;
     padding-bottom: 10rem;
     position: relative;
+    background: url("../assets/img/bg-1.webp");
+
 
     .section-title {
         position: absolute;
         top: 8rem;
         left: 50%;
         transform: translateX(-50%);
-        color: #11081f;
+        color: #04091e;
         font-size: 4rem;
         white-space: nowrap;
 
@@ -529,7 +535,7 @@ section {
 
 
     .card {
-        background-color: #11081f;
+        background-color: #04091e;
         display: flex;
         border-radius: 2rem;
         padding: 2rem;
@@ -633,7 +639,9 @@ section {
 .contact-section {
     padding-top: 20rem;
     padding-bottom: 10rem;
-    background-color: #11081f;
+    background: url("../assets/img/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 
     h2 {
@@ -737,7 +745,7 @@ footer {
     background-color: #f4f7fd;
 
     p {
-        color: #11081f;
+        color: #04091e;
         white-space: nowrap;
         font-size: 1.7rem;
     }
@@ -753,7 +761,7 @@ footer {
         i {
             margin-right: .8rem;
             font-size: 1.9rem;
-            color: #11081f;
+            color: #04091e;
         }
 
         &:hover {
