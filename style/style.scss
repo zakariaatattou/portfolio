@@ -510,7 +510,8 @@ section {
     padding-bottom: 10rem;
     position: relative;
     background: url("../assets/img/bg-1.webp");
-
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .section-title {
         position: absolute;
