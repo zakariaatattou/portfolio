@@ -498,7 +498,7 @@ section {
 
 .timeline-section .timeline .timeline-row:nth-child(even) .timeline-content::after {
   right: unset;
-  left: -3.5rem;
+  left: -3.2rem;
   -webkit-transform: rotate(90deg) translateY(-50%);
           transform: rotate(90deg) translateY(-50%);
 }
@@ -560,7 +560,7 @@ section {
   content: "";
   position: absolute;
   top: 35%;
-  right: -3.5rem;
+  right: -3.2rem;
   border-width: 1.2rem;
   border-style: solid;
   border-color: #f4f7fd transparent transparent transparent;
@@ -683,7 +683,7 @@ section {
   padding: 0 3rem;
 }
 
-.work-section .card .details h3 {
+.work-section .card .details a {
   font-size: 2rem;
   font-weight: 600;
   color: white;
