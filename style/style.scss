@@ -194,11 +194,22 @@ section {
         height: 100%;
         width: 50%;
 
-        img {
-            border: .8rem solid #635FC7;
+        .illustration-container {
+            display: flex;
+            justify-content: flex-end;
             width: 60%;
-            border-radius: 2rem;
+            background-color: #04091e;
+            border-radius: 1.2rem;
+
+            img {
+                border-radius: 1.2rem;
+                border: .4rem solid #04091e;
+                width: 100%;
+                transform: translate(-1.1rem, -1.4rem);
+
+            }
         }
+
 
         ul {
             display: flex;

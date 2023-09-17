@@ -233,10 +233,24 @@ section {
   width: 50%;
 }
 
-.about-section .illustration img {
-  border: .8rem solid #635FC7;
+.about-section .illustration .illustration-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
-  border-radius: 2rem;
+  background-color: #04091e;
+  border-radius: 1.2rem;
+}
+
+.about-section .illustration .illustration-container img {
+  border-radius: 1.2rem;
+  border: .4rem solid #04091e;
+  width: 100%;
+  -webkit-transform: translate(-1.1rem, -1.4rem);
+          transform: translate(-1.1rem, -1.4rem);
 }
 
 .about-section .illustration ul {
