@@ -33,17 +33,29 @@
     <header class="header"
             id="header">
         <a class="title"
-           href="">Zakaria Atattou.</a>
+           href="">Zakaria Atattou<span class="dot">.</span></a>
 
         <ul>
-            <li><a href="#home"><i class="fa-solid fa-house"></i></i>Home</a></li>
+            <li><a href="#home">
+                    <!-- <i class="fa-solid fa-house"></i></i> -->
+                    About
+                </a></li>
             <!-- <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li> -->
-            <li><a href="#experience"><i class="fa-solid fa-layer-group"></i> Experience</a></li>
+            <li><a href="#experience">
+                    <!-- <i class="fa-solid fa-layer-group"></i> -->
+                    Experience
+                </a></li>
             <li>
-                <a href="#work"><i class="fa-solid fa-list"></i> Featured Work</a>
+                <a href="#work">
+                    <!-- <i class="fa-solid fa-list"></i>  -->
+                    Featured Work
+                </a>
             </li>
             <li>
-                <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                <a href="#contact">
+                    <!-- <i class="fa-solid fa-envelope"></i>  -->
+                    Contact
+                </a>
             </li>
         </ul>
 
@@ -165,6 +177,16 @@
                 <div class="timeline-time">
                     <span class="year">2023</span>
                     <span class="month">January</span>
+                </div>
+            </div>
+            <div class="timeline-row">
+                <div class="timeline-content">
+                    <a href="javascript:void">Freelance</a>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
+                </div>
+                <div class="timeline-time">
+                    <span class="year">2023</span>
+                    <span class="month">November</span>
                 </div>
             </div>
         </div>
@@ -305,15 +327,15 @@
         });
         const burgerBtn = document.getElementById("burger-btn")
         const header = document.getElementById("header")
-        document.addEventListener("scroll", (event) => {
-            header.classList.remove("collapsed")
+        // document.addEventListener("scroll", (event) => {
+        //     header.classList.remove("collapsed")
 
-            if (window.pageYOffset > 50) {
-                header.classList.add("stretched")
-            } else {
-                header.classList.remove("stretched")
-            }
-        });
+        //     if (window.pageYOffset > 50) {
+        //         header.classList.add("stretched")
+        //     } else {
+        //         header.classList.remove("stretched")
+        //     }
+        // });
         document.addEventListener("click", (event) => {
             if (!header.contains(event.target)) {
                 header.classList.remove("collapsed")
