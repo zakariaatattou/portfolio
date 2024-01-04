@@ -620,44 +620,57 @@ section {
   background-color: #635FC7;
 }
 
-.work-section .card {
+.work-section .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(22px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(22px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.work-section .cards .card {
   background-color: #04091e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 2rem;
   padding: 2rem;
-  gap: 1rem;
+  gap: 2rem;
   min-height: 45rem;
 }
 
-.work-section .card:not(:last-child) {
+.work-section .cards .card:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.work-section .card .swiper {
+.work-section .cards .card .swiper {
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 2rem;
-  width: 50%;
+  width: 100%;
 }
 
-.work-section .card .swiper .swiper-slide img {
+.work-section .cards .card .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
 }
 
-.work-section .card .swiper .swiper-button-next,
-.work-section .card .swiper .swiper-button-prev {
+.work-section .cards .card .swiper .swiper-button-next,
+.work-section .cards .card .swiper .swiper-button-prev {
   color: #635fc7;
 }
 
-.work-section .card .swiper .swiper-button-next::after,
-.work-section .card .swiper .swiper-button-prev::after {
+.work-section .cards .card .swiper .swiper-button-next::after,
+.work-section .cards .card .swiper .swiper-button-prev::after {
   font-size: 4rem;
 }
 
-.work-section .card .img {
+.work-section .cards .card .img {
   width: 50%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -669,12 +682,12 @@ section {
   transition: background-position 4s;
 }
 
-.work-section .card:hover .img {
+.work-section .cards .card:hover .img {
   background-position: bottom;
 }
 
-.work-section .card .details {
-  width: 50%;
+.work-section .cards .card .details {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,30 +695,25 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  padding: 0 3rem;
 }
 
-.work-section .card .details a {
+.work-section .cards .card .details a {
   font-size: 2rem;
   font-weight: 600;
   color: white;
   margin-bottom: 3rem;
 }
 
-.work-section .card .details p {
+.work-section .cards .card .details p {
   font-size: 1.7rem;
   margin-bottom: 3rem;
   color: #828FA3;
 }
 
-.work-section .card .details ul {
+.work-section .cards .card .details ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -716,7 +724,7 @@ section {
   gap: 1rem;
 }
 
-.work-section .card .details ul li {
+.work-section .cards .card .details ul li {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
