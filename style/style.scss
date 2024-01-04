@@ -551,7 +551,7 @@ section {
 
     .cards {
         display: grid;
-        grid-template-columns: repeat(2, minmax(22px, 1fr));
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
         gap: 2rem;
         width: 100%;
 
@@ -1017,6 +1017,13 @@ footer {
 
     .contact-section {
         padding: 20rem 20rem 10rem 20rem;
+    }
+
+    .work-section {
+        .cards {
+            display: initial;
+            grid-template-columns: 1fr;
+        }
     }
 }
 

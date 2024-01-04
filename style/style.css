@@ -623,8 +623,8 @@ section {
 .work-section .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(22px, 1fr))[2];
-      grid-template-columns: repeat(2, minmax(22px, 1fr));
+  -ms-grid-columns: (minmax(320px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(320px, 1fr));
   gap: 2rem;
   width: 100%;
 }
@@ -1096,6 +1096,11 @@ footer a:hover i {
   }
   .contact-section {
     padding: 20rem 20rem 10rem 20rem;
+  }
+  .work-section .cards {
+    display: initial;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
