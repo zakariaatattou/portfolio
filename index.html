@@ -15,7 +15,7 @@
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
           crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
           rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -30,357 +30,475 @@
 </head>
 
 <body>
-    <header class="header"
-            id="header">
-        <a class="title"
-           href="">Zakaria Atattou<span class="dot">.</span></a>
-
-        <ul>
-            <li><a href="#home">
-                    <!-- <i class="fa-solid fa-house"></i></i> -->
-                    About
-                </a></li>
-            <!-- <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About</a></li> -->
-            <li><a href="#experience">
-                    <!-- <i class="fa-solid fa-layer-group"></i> -->
-                    Experience
-                </a></li>
-            <li>
-                <a href="#work">
-                    <!-- <i class="fa-solid fa-list"></i>  -->
-                    Featured Work
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    <!-- <i class="fa-solid fa-envelope"></i>  -->
-                    Contact
-                </a>
-            </li>
-        </ul>
-
-        <button id="burger-btn"
-                class="burger-btn"><i class="fa-solid fa-bars"></i></button>
-    </header>
-    <section class="about-section"
-             id="home">
-        <div class="description"
-             data-aos="fade-right">
-            <h3>Hi, My name is</h3>
-            <h1>ZAKARIA ATATTOU</h1>
-            <p>A passionate frontend developer focused on turning ideas into functional and delightful user experiences.
-            </p>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML</span>
-                </li>
-                <li>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>CSS</span>
-                </li>
-                <li>
-                    <i class="fa-brands fa-js"></i>
-                    <span>JavaScript</span>
-                </li>
-                <li>
-                    <i class="fa-brands fa-angular"></i>
-                    <span>ANGULAR</span>
-                </li>
-                <li>
-                    <i class="fa-brands fa-react"></i>
-                    <span>REACT</span>
-                </li>
-                <li>
-                    <i class="fa-brands fa-node-js"></i>
-                    <span>NODE</span>
-                </li>
-                <li>
-                    <i class="fa-brands fa-figma"></i>
-                    <span>FIGMA</span>
-                </li>
+    <div class="container">
+        <header class="header"
+                id="header">
+            <div class="logo"> ZAKARIA ATATTOU. </div>
+            <ul class="navigation-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Stack</a></li>
+                <li><a href="#stack">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li class="separator">|</li> -->
+                <!-- <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="separator">|</li> -->
+                <!-- <li><button><i class="fa-solid fa-moon"></i></button></li> -->
             </ul>
-            <div class="cta-btns">
-                <a href="/assets/docs/ZAKARIA-ATATTOU-RESUME.pdf"
-                   download="ZAKARIA-ATATTOU-RESUME.pdf"><button class="btn primary">Download CV</button></a>
-                <a href="#work"><button class="btn secondary">View Projects</button></a>
-            </div>
-        </div>
 
-        <div class="illustration"
-             data-aos="fade-left">
-            <div class="illustration-container">
-                <img src="./assets/img//profile.png"
+            <button id="burger-btn"
+                    class="burger-btn"><i class="fa-solid fa-bars"></i></button>
+        </header>
+
+        <section class="hero"
+                 id="about">
+            <div class="text"
+                 data-aos="fade-right"
+                 data-aos-duration="1000">
+                <h1>Hi, I'm Zakaria</h1>
+                <p>A Front-End Developer based in Rabat, Morocco with a passion for JavaScript and Angular. I like to
+                    deliver
+                    visually stunning and high-performance web applications with a focus on optimising user experience.
+                </p>
+
+                <p>I'm on a never-ending quest for knowledge and stay up-to-date with the latest industry trends, always
+                    eager to embrace new challenges and technologies. Let's collaborate and create web wonders that
+                    leave a lasting impact on the digital landscape!</p>
+                <div class="actions">
+                    <a href="#contact"><button class="btn primary">Get in Touch</button></a>
+                    <a href="#projects"><button class="btn secondary">View Projects</button></a>
+                </div>
+            </div>
+
+            <div class="profile"
+                 data-aos="fade-left"
+                 data-aos-duration="1000">
+                <!-- <img class="dots"
+                     src="/assets/img/dot-grid.svg"
+                     alt=""> -->
+                <img class="profile-img"
+                     src="/assets/img/profile.png"
                      alt="">
             </div>
-            <ul>
-                <li>
-                    <a target="_blank"
-                       href="https://github.com/lonewolfzak"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li>
-                    <a target="_blank"
-                       href="https://www.linkedin.com/in/zakaria-atattou/"><i class="fa-brands fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="timeline-section"
-             id="experience">
-        <h2 class="section-title">Experience</h2>
+        </section>
+        <section class="services"
+                 id="services"
+                 data-aos="fade-up">
+            <div class="section-title">
 
-        <div class="timeline">
-            <div class="timeline-row">
-                <div class="timeline-content">
-                    <a target="_blank"
-                       href="https://invyscode.co/">INVYSCODE</a>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
-                </div>
-                <div class="timeline-time">
-                    <span class="year">2021</span>
-                    <span class="month">April</span>
-                </div>
+                <h2>Services</h2>
             </div>
-            <div class="timeline-row">
-                <div class="timeline-content">
-                    <a target="_blank"
-                       href="https://valsquad.com/">VALSQUAD</a>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
-                </div>
-                <div class="timeline-time">
-                    <span class="year">2021</span>
-                    <span class="month">June</span>
-                </div>
-            </div>
-            <div class="timeline-row">
-                <div class="timeline-content">
-                    <a target="_blank"
-                       href="https://blackstoneeit.com/">BLACKSTONE EIT</a>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
-                </div>
-                <div class="timeline-time">
-                    <span class="year">2022</span>
-                    <span class="month">May</span>
-                </div>
-            </div>
-            <div class="timeline-row">
-                <div class="timeline-content">
-                    <a target="_blank"
-                       href="https://valsquad.com/">VALSQUAD</a>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
-                </div>
-                <div class="timeline-time">
-                    <span class="year">2023</span>
-                    <span class="month">January</span>
-                </div>
-            </div>
-            <div class="timeline-row">
-                <div class="timeline-content">
-                    <a href="javascript:void">Freelance</a>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
-                </div>
-                <div class="timeline-time">
-                    <span class="year">2023</span>
-                    <span class="month">November</span>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <section class="work-section"
-             id="work">
-        <h2 class="section-title">Featured Work</h2>
-
-        <div class="cards">
-            <div class="card">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/img//ajman-1.png"
-                                 alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img//ajman-2.png"
-                                 alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img//ajman-3.png"
-                                 alt="">
-                        </div>
+            <div class="services-grid">
+                <div class="card">
+                    <img src="/assets/img/web.svg"
+                         alt="">
+                    Web Development
+                </div>
+                <div class="card">
+                    <img src="/assets/img/design.svg"
+                         alt="">
+                    UI/UX Design
+                </div>
+                <div class="card">
+                    <img src="/assets/img/seo.svg"
+                         alt="">
+                    SEO Optimization
+                </div>
+            </div>
+        </section>
+        <section class="experience"
+                 id="experience"
+                 data-aos="fade-up"
+                 data-aos-duration="1000">
+            <div class="section-title">
+                <h2>Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-row">
+                    <div class="timeline-content">
+                        <a target="_blank"
+                           href="https://invyscode.co/">INVYSCODE</a>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <div class="details">
-                    <a href="https://ajmancao.ae"
-                       target="_blank">E-service portal for Ajman Citizens Affairs Office </a>
-                    <p>Ajman eService Portal is the rendering of government services and information to the public
-                        citizens
-                        and allows government to deliver services to citizen when they need them </p>
-                    <ul>
-                        <li>
-                            #Angular
-                        </li>
-                        <li>
-                            #Bootstrap
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/img//khadamati-1.png"
-                                 alt="">
-                        </div>
+                    <div class="timeline-time">
+                        <span class="year">2021</span>
+                        <span class="month">April</span>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="details">
-                    <a target="_blank"
-                       href="https://www.khadamati.gov.ae/">KHADAMATI PORTAL REVAMP </a>
-                    <p>The Emirates Government Services Excellence Program sought to improve the user experience of
-                        their
-                        Khadamati platform, which serves as the primary database for all federal government services and
-                        related data. With over 2,000 services and 40 entities utilizing the system, it is a critical
-                        tool
-                        for centralized bodies responsible for monitoring government services. The revamped platform
-                        aimed
-                        to simplify data entry for entity users and ensure accuracy and frequency of key data. The
-                        system is
-                        also integrated with various other government entity systems, making it an essential component
-                        of
-                        the government's digital infrastructure. </p>
-                    <ul>
-                        <li>
-                            #Angular
-                        </li>
-                        <li>
-                            #PrimeNG
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/img/easy-invoice-1.png"
-                                 alt="">
-                        </div>
+                <div class="timeline-row">
+                    <div class="timeline-content">
+                        <a target="_blank"
+                           href="https://valsquad.com/">VALSQUAD</a>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <div class="details">
-                    <a href="https://easy-invoice-2mec.onrender.com/"
-                       target="_blank">Easy Invoice </a>
-                    <p>Invoice Easy streamlines your invoicing process with a straightforward web application. Eliminate
-                        manual hassles and create professional invoices effortlessly. Enjoy automatic calculations and
-                        easy itemization, tailored for businesses and freelancers. Invoice Easy ensures a seamless and
-                        efficient invoicing experience without the need for customizable templates. Simplify your
-                        billing with Invoice Easy today.</p>
-                    <ul>
-                        <li>
-                            #React
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./assets/img/skeleton-lib-1.png"
-                                 alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img/skeleton-lib-2.png"
-                                 alt="">
-                        </div>
+                    <div class="timeline-time">
+                        <span class="year">2021</span>
+                        <span class="month">June</span>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
-
-                <div class="details">
-                    <a href="https://skeleton-lib.onrender.com/"
-                       target="_blank">Skeleton Lib </a>
-                    <p>Skeleton Lib is an open-source library meticulously designed to enhance user experience in web
-                        applications. It provides a wide array of skeleton loader designs, crucial for improving content
-                        loading perception and maintaining user engagement during wait times.</p>
-                    <ul>
-                        <li>
-                            #React
-                        </li>
-                    </ul>
+                <div class="timeline-row">
+                    <div class="timeline-content">
+                        <a target="_blank"
+                           href="https://blackstoneeit.com/">BLACKSTONE EIT</a>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
+                    </div>
+                    <div class="timeline-time">
+                        <span class="year">2022</span>
+                        <span class="month">May</span>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-content">
+                        <a target="_blank"
+                           href="https://valsquad.com/">VALSQUAD</a>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
+                    </div>
+                    <div class="timeline-time">
+                        <span class="year">2023</span>
+                        <span class="month">January</span>
+                    </div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-content">
+                        <a href="javascript:void">Freelance</a>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste optio libero quidem vitae </p> -->
+                    </div>
+                    <div class="timeline-time">
+                        <span class="year">2023</span>
+                        <span class="month">November</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-    <section class="contact-section"
-             id="contact">
-        <h2>Contact</h2>
-
-        <h4>Feel free to email me via: <a href="mailto:zakariaatattou4@outlook.com">zakariaatattou4@outlook.com</a></h4>
-
-        <p>Or fill in the contact form down below</p>
-
-        <form action="https://formspree.io/f/xyyrgjeq"
-              method="POST">
-
-            <!-- <div class="form-group">
-                <label for="">Full name</label>
-                <input required
-                       type="text">
-            </div> -->
-            <div class="form-group">
-                <label for="">Email</label>
-                <input required
-                       name="email"
-                       type="email">
+        </section>
+        <section class="stack"
+                 id="stack"
+                 data-aos="fade-up"
+                 data-aos-duration="1000">
+            <div class="section-title">
+                <h2>Tech Stack</h2>
             </div>
-            <div class="form-group">
-                <label for="">Message</label>
-                <textarea required
-                          name="message"
-                          id=""
-                          cols="30"
-                          rows="10"></textarea>
+            <div class="stack-grid">
+                <div class="card">
+                    <img src="/assets/img/javascript.svg"
+                         alt="">
+                    JAVASCRIPT
+                </div>
+                <div class="card">
+                    <img src="/assets/img/typescript.svg"
+                         alt="">
+                    TYPESCRIPT
+                </div>
+                <div class="card">
+                    <img src="/assets/img/html.svg"
+                         alt="">
+                    HTML
+                </div>
+                <div class="card">
+                    <img src="/assets/img/css.svg"
+                         alt="">
+                    CSS
+                </div>
+                <div class="card">
+                    <img src="/assets/img/react.svg"
+                         alt="">
+                    REACT
+                </div>
+                <div class="card">
+                    <img src="/assets/img/angular.svg"
+                         alt="">
+                    ANGULAR
+                </div>
+                <div class="card">
+                    <img src="/assets/img/node.svg"
+                         alt="">
+                    NODE
+                </div>
+                <div class="card">
+                    <img src="/assets/img/figma.svg"
+                         alt="">
+                    FIGMA
+                </div>
+                <div class="card">
+                    <img src="/assets/img/git.svg"
+                         alt="">
+                    GIT
+                </div>
             </div>
+        </section>
+        <section class="projects"
+                 id="projects"
+                 data-aos="fade-up"
+                 data-aos-duration="1000">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="card">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img//ajman-1.png"
+                                     alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img//ajman-2.png"
+                                     alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img//ajman-3.png"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
 
-            <button type="submit"
-                    class="btn primary">Send</button>
-        </form>
-    </section>
-    <a href=""
-       target="_blank"
-       class="whatsapp-btn">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <footer>
-        <p>ZAKARIA ATATTOU</p>
-        <span>|</span>
-        <a target="_blank"
-           href="https://github.com/lonewolfzak"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank"
-           href="https://www.linkedin.com/in/zakaria-atattou/"><i class="fa-brands fa-linkedin"></i></a>
-    </footer>
+                    <div class="details">
+                        <a href="https://ajmancao.ae"
+                           target="_blank">E-service portal for Ajman Citizens Affairs Office </a>
+                        <p>Ajman eService Portal is the rendering of government services and information to the public
+                            citizens
+                            and allows government to deliver services to citizen when they need them </p>
+                        <ul>
+                            <li>
+                                #Angular
+                            </li>
+                            <li>
+                                #Bootstrap
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img//khadamati-1.png"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="details">
+                        <a target="_blank"
+                           href="https://www.khadamati.gov.ae/">KHADAMATI PORTAL REVAMP </a>
+                        <p>The Emirates Government Services Excellence Program sought to improve the user experience of
+                            their
+                            Khadamati platform, which serves as the primary database for all federal government services
+                            and
+                            related data. With over 2,000 services and 40 entities utilizing the system, it is a
+                            critical
+                            tool
+                            for centralized bodies responsible for monitoring government services. The revamped platform
+                            aimed
+                            to simplify data entry for entity users and ensure accuracy and frequency of key data. The
+                            system is
+                            also integrated with various other government entity systems, making it an essential
+                            component
+                            of
+                            the government's digital infrastructure. </p>
+                        <ul>
+                            <li>
+                                #Angular
+                            </li>
+                            <li>
+                                #PrimeNG
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img/easy-invoice-1.png"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="details">
+                        <a href="https://easy-invoice-2mec.onrender.com/"
+                           target="_blank">Easy Invoice </a>
+                        <p>Invoice Easy streamlines your invoicing process with a straightforward web application.
+                            Eliminate
+                            manual hassles and create professional invoices effortlessly. Enjoy automatic calculations
+                            and
+                            easy itemization, tailored for businesses and freelancers. Invoice Easy ensures a seamless
+                            and
+                            efficient invoicing experience without the need for customizable templates. Simplify your
+                            billing with Invoice Easy today.</p>
+                        <ul>
+                            <li>
+                                #React
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img/skeleton-lib-1.png"
+                                     alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/skeleton-lib-2.png"
+                                     alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="details">
+                        <a href="https://skeleton-lib.onrender.com/"
+                           target="_blank">Skeleton Lib </a>
+                        <p>Skeleton Lib is an open-source library meticulously designed to enhance user experience in
+                            web
+                            applications. It provides a wide array of skeleton loader designs, crucial for improving
+                            content
+                            loading perception and maintaining user engagement during wait times.</p>
+                        <ul>
+                            <li>
+                                #React
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact"
+                 id="contact"
+                 data-aos="fade-up"
+                 data-aos-duration="1000">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <div class="form-container">
+                <header>
+                    <div class="actions">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>New Message</span>
+                </header>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="">TO:</label>
+                        <input value="zakariaatattou4@outlook.com"
+                               name="email"
+                               type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">FROM:</label>
+                        <input required
+                               name="email"
+                               id="email"
+                               type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">SUBJECT:</label>
+                        <input required
+                               name="text"
+                               id="subject"
+                               type="text">
+                    </div>
+                    <div class="message">
+                        <textarea required
+                                  name="message"
+                                  id="message"
+                                  cols="30"
+                                  placeholder="Write your message..."
+                                  rows="10"></textarea>
+                    </div>
+
+
+                    <div class="success-msg"
+                         id="success-msg">
+                        <i class="fa-solid fa-circle-exclamation"></i>Message successfully sent! I will get back to you
+                        as soon as possible
+                    </div>
+
+                    <button type="submit"
+                            class="btn primary">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>ZAKARIA ATATTOU</p>
+            <span>|</span>
+            <a target="_blank"
+               href="https://github.com/lonewolfzak"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank"
+               href="https://www.linkedin.com/in/zakaria-atattou/"><i class="fa-brands fa-linkedin"></i></a>
+        </footer>
+    </div>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script type="module">
 
-    <script>
+        // Import the functions you need from the SDKs you need
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+        // Your web app's Firebase configuration
+
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyDXwE_DgLZxT2fPCG3YVxMWn1VIrVe3las",
+
+            authDomain: "portfolio-contact-43604.firebaseapp.com",
+
+            databaseURL: "https://portfolio-contact-43604-default-rtdb.firebaseio.com",
+
+            projectId: "portfolio-contact-43604",
+
+            storageBucket: "portfolio-contact-43604.appspot.com",
+
+            messagingSenderId: "512621326662",
+
+            appId: "1:512621326662:web:680d3a3cf782b47476b547",
+
+            measurementId: "G-2LRBQTRP9F"
+
+        };
+
+
+        // Initialize Firebase
+
+        const app = initializeApp(firebaseConfig);
+
+        const db = getDatabase()
+
         AOS.init();
         const swiper = new Swiper(".mySwiper", {
             pagination: {
@@ -394,15 +512,14 @@
         });
         const burgerBtn = document.getElementById("burger-btn")
         const header = document.getElementById("header")
-        // document.addEventListener("scroll", (event) => {
-        //     header.classList.remove("collapsed")
-
-        //     if (window.pageYOffset > 50) {
-        //         header.classList.add("stretched")
-        //     } else {
-        //         header.classList.remove("stretched")
-        //     }
-        // });
+        const form = document.getElementById("form")
+        const email = document.getElementById("email")
+        const subject = document.getElementById("subject")
+        const message = document.getElementById("message")
+        const successMsg = document.getElementById("success-msg")
+        document.addEventListener("scroll", (event) => {
+            header.classList.remove("collapsed")
+        });
         document.addEventListener("click", (event) => {
             if (!header.contains(event.target)) {
                 header.classList.remove("collapsed")
@@ -412,8 +529,26 @@
         burgerBtn.addEventListener("click", () => {
             header.classList.toggle("collapsed")
         })
-    </script>
 
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const db = getDatabase();
+            set(ref(db, 'emails'), {
+                subject: subject.value,
+                email: email.value,
+                message: message.value
+            }).then(() => {
+                successMsg.style.display = 'flex'
+                setTimeout(() => {
+                    successMsg.style.display = 'none'
+                }, 4000);
+                form.reset()
+            }).catch((error) => {
+                console.log('The write failed!:' + error)
+            });
+
+        })
+    </script>
 </body>
 
 </html>
