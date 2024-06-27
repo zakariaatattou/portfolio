@@ -80,7 +80,7 @@ body .container .header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.6rem 1rem;
+  padding: 1.2rem 1rem;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
   position: -webkit-sticky;
@@ -126,7 +126,6 @@ body .container .header .navigation-list i {
 body .container .header .navigation-list li a {
   font-size: .9rem;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 body .container .header .navigation-list li a:hover {
@@ -404,6 +403,9 @@ body .container .stack .stack-grid {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
 }
 
@@ -411,8 +413,8 @@ body .container .stack .stack-grid .card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 15rem;
-  min-width: 18.75rem;
+  height: 12rem;
+  min-width: 14.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,10 +425,11 @@ body .container .stack .stack-grid .card {
   gap: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
+  max-width: 14.75rem;
 }
 
 body .container .stack .stack-grid .card img {
-  width: 7.25rem;
+  width: 5.25rem;
   height: auto;
 }
 
@@ -462,6 +465,7 @@ body .container .projects .projects-grid .card .details {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 body .container .projects .projects-grid .card .details a {
