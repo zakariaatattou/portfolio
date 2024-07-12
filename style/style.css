@@ -58,7 +58,7 @@ body::before {
   top: 0;
   left: 0;
   content: "";
-  opacity: .1;
+  opacity: .2;
   background-image: url("/assets/img/noise-light.webp");
   z-index: -1;
 }
