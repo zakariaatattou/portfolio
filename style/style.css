@@ -58,7 +58,7 @@ body::before {
   top: 0;
   left: 0;
   content: "";
-  opacity: .1;
+  opacity: .2;
   background-image: url("/assets/img/noise-light.webp");
   z-index: -1;
 }
@@ -105,6 +105,9 @@ body .container .header .logo {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body .container .header .navigation-list {
@@ -158,6 +161,10 @@ body .container .hero .text {
 body .container .hero .text h1 {
   font-size: 3rem;
   color: white;
+}
+
+body .container .hero .text h1 span {
+  color: #723fc7;
 }
 
 body .container .hero .text p {
@@ -764,6 +771,16 @@ body .container footer a:hover i {
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+  height: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn a {

@@ -58,7 +58,7 @@ body {
         top: 0;
         left: 0;
         content: "";
-        opacity: .1;
+        opacity: .2;
         background-image: url("/assets/img/noise-light.webp");
         z-index: -1;
     }
@@ -99,6 +99,7 @@ body {
                 font-size: 1.2rem;
                 font-weight: bold;
                 color: white;
+                display: flex;
             }
 
             .navigation-list {
@@ -154,6 +155,11 @@ body {
                     // background: linear-gradient(180deg, rgba(255, 255, 255, 1) 13%, rgba(168, 85, 247, 1) 100%);
                     // -webkit-background-clip: text;
                     // -webkit-text-fill-color: transparent;
+
+
+                    span {
+                        color: #723fc7;
+                    }
                 }
 
                 p {
@@ -669,6 +675,10 @@ body {
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     a {
         width: 100%;
